@@ -170,8 +170,6 @@
 
     menuBtn.onclick = () => menu.classList.add("open");
     closeBtn.onclick = () => menu.classList.remove("open");
-
-    /* VIDEO CHANGE */
     function changeVideo(videoId) {
         const mainVideo = document.getElementById('mainVideo');
         mainVideo.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
@@ -183,7 +181,7 @@
         event.currentTarget.classList.add('active');
     }
 
-    /* SLIDER */
+
     const track = document.getElementById("videoTrack");
     const items = document.querySelectorAll(".video-item"); // DINEFINE ITO PARA GUMANA ANG LENGTH
     const slideCurrent = document.getElementById("slideCurrent");
@@ -217,9 +215,10 @@
         }
     }
 
-    // Para mag-adjust ang slider kapag nire-resize ang browser window
+
     window.addEventListener('resize', updateSlide);
 </script>
 
 </body>
+
 </html>
