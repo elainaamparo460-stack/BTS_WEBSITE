@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS | Video</title>
+    <link rel="stylesheet" href="videoo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="BTS Logo">
+    </a>
+    <button id="menuBtn" class="menu-btn">☰</button>
+</header>
+
+<div class="menu-overlay" id="menu">
+    <div class="menu-header">
+        <a href="index.html" class="menu-logo">
+            <img src="img/logo.png" alt="BTS Logo">
+        </a>
+        <div id="closeBtn" class="close-btn">×</div>
+    </div>
+    <nav class="menu-links">
+        <a href="index.html">HOME</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="discography.html">DISCOGRAPHY</a>
+        <a href="video.html">VIDEO</a>
+        <a href="tinytan.html">TINYTAN</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+    <div class="menu-socials">
+        <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/bts_twt" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/bangtan.official" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@BANGTANTV" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="copyright">
+        © HYBE Co., Ltd. ALL RIGHTS RESERVED.
+    </div>
+</div>
+
+ <div class="page-label">
+  <span class="num">03</span>
+  <div class="line"></div>
+  <span class="text">PROFILE</span>
+</div>
+
+<main class="video-section">
+    <h1>VIDEO</h1>
+    <div class="video-wrapper">
+        <iframe id="mainVideo" 
+                src="https://www.youtube.com/embed/kTlv5_Bs8aw" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+</main>
+<section class="video-list-container"> 
+  <section class="video-list">
+    <div class="slider-window">
+      <div class="video-track" id="videoTrack">
+
+        <div class="video-item active" onclick="changeVideo('WMweEpGlu_U')">
+          <img src="https://img.youtube.com/vi/WMweEpGlu_U/mqdefault.jpg" alt="Butter MV">
+          <div class="video-info">
+            <span>OFFICIAL MV</span>
+            <span>2021</span>
+          </div>
+        </div>
+
+                <div class="video-item" onclick="changeVideo('qsobCAGiuRU')">
+                    <img src="https://img.youtube.com/vi/qsobCAGiuRU/mqdefault.jpg" alt="Interview">
+                    <div class="video-info">
+                        <span>INTERVIEW</span>
+                        <span>2021</span>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="changeVideo('aqW4xXUgmno')">
+                    <img src="https://img.youtube.com/vi/aqW4xXUgmno/mqdefault.jpg" alt="Practice">
+                    <div class="video-info">
+                        <span>DANCE PRACTICE</span>
+                        <span>2022</span>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="changeVideo('HbkBVxU5K5A')">
+                    <img src="https://img.youtube.com/vi/HbkBVxU5K5A/mqdefault.jpg" alt="Live Stage">
+                    <div class="video-info">
+                        <span>LIVE STAGE</span>
+                        <span>2020</span>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="changeVideo('0Dc6tHgXp88')">
+                    <img src="https://img.youtube.com/vi/0Dc6tHgXp88/mqdefault.jpg" alt="Behind Scenes">
+                    <div class="video-info">
+                        <span>BEHIND SCENES</span>
+                        <span>2023</span>
+                    </div>
+                </div>
+                      <div class="video-item" onclick="changeVideo('CoLspajPTSY')">
+                    <img src="https://img.youtube.com/vi/CoLspajPTSY/mqdefault.jpg" alt="AMAs Behind">
+                    <div class="video-info">
+                        <span>BEHIND SCENES</span>
+                        <span>2022</span>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="changeVideo('-5q5mZbe3V8')">
+                    <img src="https://img.youtube.com/vi/-5q5mZbe3V8/mqdefault.jpg" alt="Life Goes On MV">
+                    <div class="video-info">
+                        <span>OFFICIAL MV</span>
+                        <span>2020</span>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="changeVideo('RhJqNFQCU_Q')">
+                    <img src="https://img.youtube.com/vi/RhJqNFQCU_Q/mqdefault.jpg" alt="Birthday Party">
+                    <div class="video-info">
+                        <span>EPISODE</span>
+                        <span>2014</span>
+                    </div>
+                </div>
+
+                <div class="video-item" onclick="changeVideo('RvcP6V4h_q4')">
+                    <img src="https://img.youtube.com/vi/RvcP6V4h_q4/mqdefault.jpg" alt="Life Goes On Forest">
+                    <div class="video-info">
+                        <span>OFFICIAL MV</span>
+                        <span>2020</span>
+                    </div>
+                </div><div class="video-item" onclick="changeVideo('qkLMPihvKaQ')">
+                  <img src="https://img.youtube.com/vi/qkLMPihvKaQ/mqdefault.jpg" alt="Run BTS Practice">
+                  <div class="video-info">
+                      <span>DANCE PRACTICE</span>
+                      <span>2022</span>
+                  </div>
+              </div>
+
+               </div>
+               </div>
+    </section>
+
+    <div class="slider-nav-bottom">
+        <button onclick="prevSlide()">‹</button>
+        <span id="slideCurrent">1</span> / <span id="slideTotal">5</span>
+        <button onclick="nextSlide()">›</button>
+    </div>
+</section>
+
+<div class="socials-main">
+    <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://twitter.com/bts_twt" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://www.facebook.com/bangtan.official" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.youtube.com/@BANGTANTV" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+</div>
+
+<div class="homepage-copyright">
+    © HYBE Co., Ltd. ALL RIGHTS RESERVED.
+</div>
+
+<script>
+    const menu = document.getElementById("menu");
+    const menuBtn = document.getElementById("menuBtn");
+    const closeBtn = document.getElementById("closeBtn");
+
+    menuBtn.onclick = () => menu.classList.add("open");
+    closeBtn.onclick = () => menu.classList.remove("open");
+
+    /* VIDEO CHANGE */
+    function changeVideo(videoId) {
+        const mainVideo = document.getElementById('mainVideo');
+        mainVideo.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+        
+        const items = document.querySelectorAll('.video-item');
+        items.forEach(item => item.classList.remove('active'));
+        
+        // Gamit ang event target para malaman kung alin ang pinindot
+        event.currentTarget.classList.add('active');
+    }
+
+    /* SLIDER */
+    const track = document.getElementById("videoTrack");
+    const items = document.querySelectorAll(".video-item"); // DINEFINE ITO PARA GUMANA ANG LENGTH
+    const slideCurrent = document.getElementById("slideCurrent");
+    const slideTotal = document.getElementById("slideTotal");
+
+    let slideIndex = 0;
+    const totalSlides = items.length;
+
+    slideTotal.textContent = totalSlides;
+    slideCurrent.textContent = slideIndex + 1;
+
+    function updateSlide(){
+        if(items.length > 0) {
+            const itemWidth = items[0].offsetWidth + 32; // 32px gap sa CSS mo
+            track.style.transform = `translateX(-${slideIndex * itemWidth}px)`;
+            slideCurrent.textContent = slideIndex + 1;
+        }
+    }
+
+    function nextSlide(){
+        if(slideIndex < totalSlides - 1){
+            slideIndex++;
+            updateSlide();
+        }
+    }
+
+    function prevSlide(){
+        if(slideIndex > 0){
+            slideIndex--;
+            updateSlide();
+        }
+    }
+
+    // Para mag-adjust ang slider kapag nire-resize ang browser window
+    window.addEventListener('resize', updateSlide);
+</script>
+
+</body>
+</html>
