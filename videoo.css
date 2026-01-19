@@ -1,6 +1,4 @@
-/* =====================
-   1. GLOBAL RESET
-===================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +16,7 @@ body.menu-open {
   overflow: hidden;
 }
 
-/* =====================
-   2. HEADER & MENU OVERLAY
-===================== */
+
 .header {
   position: fixed;
   top: 0;
@@ -124,9 +120,6 @@ body.menu-open {
   letter-spacing: 1px;
 }
 
-/* =====================
-   3. SIDEBAR ELEMENTS (FIXED)
-===================== */
 .page-label {
   position: fixed;
   right: 48px;
@@ -150,8 +143,6 @@ body.menu-open {
   letter-spacing: 5px; 
   text-transform: uppercase; 
 }
-
-/* SOCIALS MAIN - LEFT */
 .socials-main {
   position: fixed;
   left: 48px;
@@ -165,9 +156,6 @@ body.menu-open {
 .socials-main a { font-size: 22px; color: #111; text-decoration: none; transition: 0.3s; }
 .socials-main a:hover { transform: translateX(6px); color: #edfe80; }
 
-/* =====================
-   4. VIDEO SECTIONS
-===================== */
 .video-section {
   margin-top: 140px;
   text-align: center;
@@ -261,9 +249,7 @@ body.menu-open {
   color: #fff;
 }
 
-/* =====================
-   5. FOOTER & RESPONSIVE
-===================== */
+
 .homepage-copyright {
   text-align: right;
   padding: 40px 48px;
@@ -280,4 +266,5 @@ body.menu-open {
 @media (max-width: 600px) {
   .video-wrapper iframe { height: 220px; }
   .video-item { min-width: 180px; }
+
 }
