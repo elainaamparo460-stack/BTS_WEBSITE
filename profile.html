@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTS | Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="filee.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="BTS Logo">
+  </a>
+  <button id="menuBtn" class="menu-btn">☰</button>
+</header>
+
+<div class="menu-overlay" id="menu">
+  <div class="menu-header">
+    <a href="index.html" class="menu-logo">
+      <img src="img/logo.png" alt="BTS Logo">
+    </a>
+    <div id="closeBtn" class="close-btn">×</div>
+  </div>
+
+  <nav class="menu-links">
+    <a href="index.html">HOME</a>
+    <a href="profile.html">PROFILE</a>
+    <a href="discography.html">DISCOGRAPHY</a>
+    <a href="video.html">VIDEO</a>
+    <a href="tinytan.html">TINYTAN</a>
+    <a href="gallery.html">GALLERY</a>
+  </nav>
+
+  <div class="menu-socials">
+    <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://twitter.com/bts_twt" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://www.facebook.com/bangtan.official" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.youtube.com/@BANGTANTV" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+
+  <div class="copyright">© HYBE Co., Ltd. ALL RIGHTS RESERVED.</div>
+</div>
+
+<div class="socials-main">
+  <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://twitter.com/bts_twt" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="https://www.facebook.com/bangtan.official" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://www.youtube.com/@BANGTANTV" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+</div>
+
+<div class="page-label">
+  <span class="num">03</span>
+  <div class="line"></div>
+  <span class="text">PROFILE</span>
+</div>
+
+<section class="profile-section">
+  <div class="profile-wrapper">
+    <div class="member-list">
+      <ul>
+        <li class="active">RM</li>
+        <li>Jin</li>
+        <li>SUGA</li>
+        <li>J-Hope</li>
+        <li>Jimin</li>
+        <li>V</li>
+        <li>Jungkook</li>
+      </ul>
+    </div>
+
+    <div class="profile-image-box">
+      <img id="profileImg" src="img/BTS_RM_PTD_On_Stage_Live_29.jpg" alt="RM">
+    </div>
+
+    <div class="profile-info" id="profileInfo">
+      <h1>RM</h1>
+      <p><strong>Full Name:</strong> Kim Namjoon</p>
+      <p><strong>Born:</strong> September 12, 1994</p>
+      <p><strong>Position:</strong> Leader, Rapper</p>
+      <p><strong>Debut:</strong> June 13, 2013</p>
+    </div>
+  </div>
+</section>
+
+<div class="homepage-copyright">
+  © HYBE Co., Ltd. ALL RIGHTS RESERVED.
+</div>
+
+<script>
+  // Menu Logic
+  const menu = document.getElementById("menu");
+  const menuBtn = document.getElementById("menuBtn");
+  const closeBtn = document.getElementById("closeBtn");
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.add("open");
+    document.body.classList.add("menu-open");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.remove("open");
+    document.body.classList.remove("menu-open");
+  });
+
+  // Profile Switch Logic
+  const members = document.querySelectorAll(".member-list li");
+  const img = document.getElementById("profileImg");
+  const info = document.getElementById("profileInfo");
+
+  const data = {
+    RM:["Kim Namjoon","September 12, 1994","Leader, Rapper","img/BTS_RM_PTD_On_Stage_Live_29.jpg"],
+    Jin:["Kim Seokjin","December 4, 1992","Vocalist","img/BTS_Jin_PTD_On_Stage_Live_29.jpg"],
+    SUGA:["Min Yoongi","March 9, 1993","Rapper","img/BTS_SUGA_PTD_On_Stage_Live_29.jpg"],
+    "J-Hope":["Jung Hoseok","February 18, 1994","Rapper, Dancer","img/BTS_J-hope_PTD_On_Stage_Live_29.jpg"],
+    Jimin:["Park Jimin","October 13, 1995","Vocalist, Dancer","img/BTS_Jimin_PTD_On_Stage_Live_29.jpg"],
+    V:["Kim Taehyung","December 30, 1995","Vocalist","img/BTS_V_PTD_On_Stage_Live_29.jpg"],
+    Jungkook:["Jeon Jungkook","September 1, 1997","Main Vocalist, Dancer","img/BTS_Jungkook_PTD_On_Stage_Live_29.jpg"]
+  };
+
+  members.forEach(member => {
+    member.addEventListener("click", () => {
+      members.forEach(x => x.classList.remove("active"));
+      member.classList.add("active");
+      const d = data[member.innerText];
+      if(d){
+        img.src = d[3];
+        info.innerHTML = `
+          <h1>${member.innerText}</h1>
+          <p><strong>Full Name:</strong> ${d[0]}</p>
+          <p><strong>Born:</strong> ${d[1]}</p>
+          <p><strong>Position:</strong> ${d[2]}</p>
+          <p><strong>Debut:</strong> June 13, 2013</p>
+        `;
+      }
+    });
+  });
+</script>
+</body>
+</html>
