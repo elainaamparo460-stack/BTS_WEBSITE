@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BTS | Home</title>
+
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="BTS Logo">
+  </a>
+  <button id="menuBtn" class="menu-btn">☰</button>
+</header>
+
+<!-- HOMEPAGE SOCIALS -->
+<div class="socials-main">
+  <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://twitter.com/bts_twt" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="https://www.facebook.com/bangtan.official" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://www.youtube.com/@BANGTANTV" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="img/download (2).gif" alt="BTS">
+</section>
+
+<!-- HOMEPAGE COPYRIGHT -->
+<div class="homepage-copyright" id="homeCopy">
+  © HYBE Co., Ltd. ALL RIGHTS RESERVED.
+</div>
+
+<!-- MENU OVERLAY -->
+<div class="menu-overlay" id="menu">
+
+  <div class="menu-header">
+    <a href="index.html" class="menu-logo">
+      <img src="img/logo.png" alt="BTS Logo">
+    </a>
+    <div id="closeBtn" class="close-btn">×</div>
+  </div>
+
+  <nav class="menu-links">
+    <a href="index.html">HOME</a>
+    <a href="profile.html">PROFILE</a>
+    <a href="discography.html">DISCOGRAPHY</a>
+    <a href="video.html">VIDEO</a>
+    <a href="tinytan.html">TINYTAN</a>
+    <a href="gallery.html">GALLERY</a>
+  </nav>
+
+  <!-- MENU SOCIALS -->
+  <div class="menu-socials">
+    <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://twitter.com/bts_twt" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://www.facebook.com/bangtan.official" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.youtube.com/@BANGTANTV" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+
+  <!-- MENU COPYRIGHT -->
+  <div class="menu-copyright">
+    © HYBE Co., Ltd. ALL RIGHTS RESERVED.
+  </div>
+
+</div>
+
+<script>
+const menu = document.getElementById("menu");
+const menuBtn = document.getElementById("menuBtn");
+const closeBtn = document.getElementById("closeBtn");
+const socials = document.querySelector(".socials-main");
+const homeCopy = document.getElementById("homeCopy");
+
+menuBtn.onclick = () => {
+  menu.classList.add("open");
+  socials.classList.add("hide"); // only homepage socials
+  homeCopy.classList.add("hide");
+};
+
+closeBtn.onclick = () => {
+  menu.classList.remove("open");
+  socials.classList.remove("hide");
+  homeCopy.classList.remove("hide");
+};
+</script>
+
+</body>
+</html>

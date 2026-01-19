@@ -1,0 +1,257 @@
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: #000;
+  color: #fff;
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header .logo img {
+  height: 100px;   /* mas malaki */
+  width: auto;
+  display: block;
+}
+
+
+/* MENU BUTTON */
+.menu-btn {
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.menu-btn:hover {
+  color: #edfe80;
+}
+
+/* =====================
+   HOMEPAGE SOCIALS
+===================== */
+.socials-main {
+  position: fixed;
+  left: 48px;
+  bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  z-index: 50;
+}
+
+.socials-main a {
+  color: #ffffff;
+  font-size: 22px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials-main a:hover {
+  color: #edfe80;
+  transform: translateX(-6px);
+}
+
+/* =====================
+   HIDE ELEMENT
+===================== */
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =====================
+   HOMEPAGE COPYRIGHT
+===================== */
+.homepage-copyright {
+  position: fixed;
+  right: 48px;
+  bottom: 24px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #ffffff;
+  z-index: 50;
+}
+
+/* =====================
+   MENU OVERLAY
+===================== */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  z-index: 999;
+  transform: translateY(-100%);
+  transition: transform 0.35s ease;
+}
+
+.menu-overlay.open {
+  transform: translateY(0);
+}
+
+/* =====================
+   MENU HEADER
+===================== */
+.menu-header {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-logo img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+.close-btn {
+  font-size: 36px;
+  cursor: pointer;
+  color: #111;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #edfe80;
+  transform: rotate(90deg);
+}
+
+/* =====================
+   MENU LINKS
+===================== */
+.menu-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 400px;
+}
+
+.menu-links a {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #111;
+  text-align: left;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: #edfe80;
+  transform: translateY(-6px);
+}
+
+/* =====================
+   MENU SOCIALS
+===================== */
+.menu-socials {
+  position: absolute;
+  left: 48px;
+  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.menu-socials a {
+  font-size: 20px;
+  color: #111;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu-socials a:hover {
+  color: #edfe80;
+  transform: translateX(-6px);
+}
+
+/* =====================
+   MENU COPYRIGHT
+===================== */
+.menu-copyright {
+  position: absolute;
+  right: 48px;
+  bottom: 24px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 24px;
+  }
+
+  .logo img,
+  .menu-logo img {
+    height: 50px;
+  }
+
+  .menu-links {
+    width: 80%;
+  }
+
+  .menu-links a {
+    font-size: 28px;
+  }
+
+  .menu-socials {
+    left: 24px;
+    bottom: 64px;
+  }
+
+  .homepage-copyright,
+  .menu-copyright {
+    right: 24px;
+    font-size: 10px;
+  }
+}
