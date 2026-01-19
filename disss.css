@@ -1,6 +1,4 @@
-/* =====================
-   GLOBAL RESET
-==================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-/* =====================
-   HEADER
-==================== */
 .header {
   position: fixed;
   top: 0;
@@ -48,9 +43,6 @@ body {
   color: #edfe80;
 }
 
-/* =====================
-   MENU OVERLAY
-==================== */
 .menu-overlay {
   position: fixed;
   inset: 0;
@@ -86,7 +78,6 @@ body {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* MENU LINKS */
 .menu-links {
   position: absolute;
   top: 50%;
@@ -113,7 +104,6 @@ body {
   color: #edfe80;
 }
 
-/* MENU SOCIALS */
 .menu-socials {
   position: absolute;
   left: 48px;
@@ -148,9 +138,6 @@ body {
   color: #333;
 }
 
-/* =====================
-   PAGE LABEL + SIDEBAR SOCIALS
-==================== */
 .page-label {
   position: fixed;
   right: 48px;
@@ -196,12 +183,9 @@ body {
   transform: translateX(6px) scale(1.1);
   color: #edfe80;
 }
-/* =====================
-   DISCOVERY / SLIDER
-==================== */
 .discography-slider {
-  max-width: 1200px;  /* was 100px, now full width for slider */
-  margin: 0 auto;      /* center horizontally */
+  max-width: 1200px;  
+  margin: 0 auto;     
   padding: 0 48px;
 }
 
@@ -235,7 +219,7 @@ body {
     display: none;
   }
 }
-/* ALBUM CARDS */
+
 .album-card {
   text-decoration: none;
   color: inherit;
@@ -287,15 +271,12 @@ body {
   cursor: pointer;
 }
 
-/* =====================
-   SECTION TITLE
-==================== */
 .section-title {
   text-align: center;
   font-size: 48px;
   font-weight: 900;
   color: #111;
-  margin: 160px 0 40px; /* spacing above slider */
+  margin: 160px 0 40px; 
 }
 
 @media (max-width: 900px) {
@@ -305,9 +286,6 @@ body {
   }
 }
 
-/* =====================
-   FOOTER / COPYRIGHT
-==================== */
 .homepage-copyright {
   width: 100%;
   text-align: right;
@@ -318,9 +296,7 @@ body {
   background: #fff;
 }
 
-/* =====================
-   RESPONSIVE
-==================== */
+
 @media (max-width: 1024px) {
   .slider-nav-bottom button {
     font-size: 28px;
@@ -339,9 +315,8 @@ body {
     margin-top: 120px;
   }
 }
-/* =====================
-   BODY SCROLL LOCK WHEN MENU OPEN
-==================== */
+
 body.menu-open {
   overflow: hidden;
 }
+
