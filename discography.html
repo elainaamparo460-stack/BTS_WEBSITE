@@ -110,7 +110,7 @@
 
 <!-- SCRIPT -->
 <script>
-    // MENU OPEN/CLOSE
+
     const menu = document.getElementById("menu");
     const menuBtn = document.getElementById("menuBtn");
     const closeBtn = document.getElementById("closeBtn");
@@ -137,7 +137,6 @@
         track.style.transform = `translateX(-${currentSlide * 100}%)`;
         current.textContent = currentSlide + 1;
 
-        // Animate albums in the current slide
         const albums = slides[currentSlide].querySelectorAll(".album-card");
         albums.forEach((album, i) => {
             setTimeout(() => album.classList.add("animate"), i * 150);
@@ -158,7 +157,7 @@
         }
     }
 
-    // Animate all albums on page load
+    
     const allAlbums = document.querySelectorAll(".album-card");
     allAlbums.forEach((album, i) => {
         setTimeout(() => album.classList.add("animate"), i * 150);
@@ -167,3 +166,4 @@
 
 </body>
 </html>
+
