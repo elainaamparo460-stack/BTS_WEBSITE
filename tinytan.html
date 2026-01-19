@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyTAN | Official Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="tinytan.css">
+<style>
+        
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+        <button class="menu-btn" id="openBtn">☰</button>
+    </header>
+
+    <div class="socials-main">
+        <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/bts_twt" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/bangtan.official" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/@BANGTANTV" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <div class="menu-overlay" id="menu">
+        <div class="menu-header">
+            <div class="menu-logo"><img src="img/logo.png" style="height: 70px;"></div>
+            <div id="closeBtn" class="close-btn">×</div>
+        </div>
+        <nav class="menu-links">
+            <a href="index.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+            <a href="discography.html">DISCOGRAPHY</a>
+            <a href="video.html">VIDEO</a>
+            <a href="tinytan.html">TINYTAN</a>
+            <a href="gallery.html">GALLERY</a>
+        </nav>
+        <div class="menu-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="menu-copyright">© HYBE Co., Ltd. ALL RIGHTS RESERVED.</div>
+    </div>
+
+    <main class="container">
+        <h1 class="hero-title">TinyTAN</h1>
+        <p class="hero-sub">Magic Door to your Heart</p>
+        
+        <div class="members-row">
+            <div class="member-box" data-m="rm" onclick="sel(this)"><img src="tiny/rm-removebg-preview.png"><div class="member-name">RM</div><div class="member-desc">Unbreakable Cuteness</div></div>
+            <div class="member-box" data-m="jin" onclick="sel(this)"><img src="tiny/jin-removebg-preview.png"><div class="member-name">JIN</div><div class="member-desc">Worldwide Cutie</div></div>
+            <div class="member-box" data-m="suga" onclick="sel(this)"><img src="tiny/suga-removebg-preview.png"><div class="member-name">SUGA</div><div class="member-desc">Sweetie Swagger</div></div>
+            <div class="member-box" data-m="jh" onclick="sel(this)"><img src="tiny/hope-removebg-preview.png"><div class="member-name">J-HOPE</div><div class="member-desc">Little Hope</div></div>
+            <div class="member-box" data-m="jm" onclick="sel(this)"><img src="tiny/jimin-removebg-preview.png"><div class="member-name">JIMIN</div><div class="member-desc">Lovely Little One</div></div>
+            <div class="member-box" data-m="v" onclick="sel(this)"><img src="tiny/v-removebg-preview.png"><div class="member-name">V</div><div class="member-desc">Precious Soul</div></div>
+            <div class="member-box" data-m="jk" onclick="sel(this)"><img src="tiny/jungkook-removebg-preview.png"><div class="member-name">JK</div><div class="member-desc">Golden Maknae</div></div>
+        </div>
+
+        <h2 class="section-header">TinyTAN Animations</h2>
+        <div class="video-grid v-2">
+            <div class="video-item" onclick="window.open('https://youtu.be/_K2v-MmAj7E')"><img src="album/tinyDynamite.jpg"><div class="video-info"><span class="v-title">Dynamite MV</span></div></div>
+            <div class="video-item" onclick="window.open('https://youtu.be/90ncej-8cjA')"><img src="album/Home.jpg"><div class="video-info"><span class="v-title">Home-cert</span></div></div>
+        </div>
+
+        <div class="video-grid v-3">
+            <div class="video-item" onclick="window.open('https://youtu.be/K7BMF0ozFS0')"><img src="album/dream.jpg"><div class="video-info"><span class="v-title">Dream ON</span></div></div>
+            <div class="video-item" onclick="window.open('https://youtu.be/Yf9Nlq5wrf8')"><img src="album/magic door.gif"><div class="video-info"><span class="v-title">Magic Door</span></div></div>
+            <div class="video-item" onclick="window.open('https://youtu.be/LFeiGU35ZzA')"><img src="album/cha.jpg"><div class="video-info"><span class="v-title">Character Trailer</span></div></div>
+        </div>
+
+        <h2 class="section-header">Promotional Images</h2>
+        <div class="promo-row">
+            <img src="tiny/6e9ac42664a41fdc3352aba906257367.gif"><img src="tiny/ee.jpg"><img src="tiny/e3688ad72d15e2f0b3a47f69432c6baa.gif"><img src="tiny/450c8414f0f2755c5d6efce23f519766.jpg">
+        </div>
+    </main>
+
+    <section class="intro-banner">
+        <h2>Borahae, TinyTAN!</h2>
+        <p>TinyTAN characters are inspired by the members of BTS, designed to bring comfort and inspiration.</p>
+        <div class="video-grid v-2" style="max-width: 800px; margin: 0 auto;">
+            <div class="video-item" onclick="window.open('https://youtu.be/JPpvYUADefI')"><img src="https://img.youtube.com/vi/JPpvYUADefI/mqdefault.jpg"><div class="video-info"><span class="v-title">Official Intro</span></div></div>
+            <div class="video-item" onclick="window.open('https://youtu.be/CqXlfmIbInQ')"><img src="https://img.youtube.com/vi/CqXlfmIbInQ/mqdefault.jpg"><div class="video-info"><span class="v-title">Hi We are TinyTAN!</span></div></div>
+        </div>
+    </section>
+
+    <footer class="footer-copy">© HYBE Co., Ltd. ALL RIGHTS RESERVED.</footer>
+
+    <script>
+        const menu = document.getElementById('menu');
+        document.getElementById('openBtn').onclick = () => { menu.classList.add('open'); document.body.classList.add('menu-open'); }
+        document.getElementById('closeBtn').onclick = () => { menu.classList.remove('open'); document.body.classList.remove('menu-open'); }
+        function sel(x) {
+            document.querySelectorAll('.member-box').forEach(b => b.classList.remove('active'));
+            x.classList.add('active');
+        }
+    </script>
+</body>
+</html>
