@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .header {
   position: fixed;
   top: 0;
@@ -40,7 +41,7 @@ body {
 }
 
 .header .menu-btn:hover {
-  color: #edfe80;
+  color:  #6d21d2;
 }
 
 .menu-overlay {
@@ -78,6 +79,7 @@ body {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
+
 .menu-links {
   position: absolute;
   top: 50%;
@@ -101,8 +103,9 @@ body {
 
 .menu-links a:hover {
   transform: translateX(8px);
-  color: #edfe80;
+  color:  #6d21d2;
 }
+
 
 .menu-socials {
   position: absolute;
@@ -124,10 +127,10 @@ body {
 
 .menu-socials a:hover i {
   transform: translateX(6px);
-  color: #edfe80;
+  color: #6d21d2;
 }
 
-/* MENU COPYRIGHT */
+
 .menu-overlay .copyright {
   position: absolute;
   right: 48px;
@@ -137,6 +140,7 @@ body {
   letter-spacing: 1px;
   color: #333;
 }
+
 
 .page-label {
   position: fixed;
@@ -181,11 +185,13 @@ body {
 
 .socials-main a:hover {
   transform: translateX(6px) scale(1.1);
-  color: #edfe80;
+  color:  #6d21d2;
 }
+
+
 .discography-slider {
   max-width: 1200px;  
-  margin: 0 auto;     
+  margin: 0 auto;      
   padding: 0 48px;
 }
 
@@ -238,7 +244,7 @@ body {
 }
 
 .album-card:hover h4 {
-  color: #edfe80;
+  color:  #6d21d2;
 }
 
 .album-card img {
@@ -255,7 +261,7 @@ body {
   font-weight: 600;
 }
 
-/* NAV BUTTONS */
+
 .slider-nav-bottom {
   display: flex;
   justify-content: center;
@@ -271,6 +277,8 @@ body {
   cursor: pointer;
 }
 
+
+
 .section-title {
   text-align: center;
   font-size: 48px;
@@ -285,6 +293,7 @@ body {
     margin-top: 140px;
   }
 }
+
 
 .homepage-copyright {
   width: 100%;
@@ -319,4 +328,3 @@ body {
 body.menu-open {
   overflow: hidden;
 }
-
