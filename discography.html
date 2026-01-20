@@ -9,13 +9,12 @@
 </head>
 <body>
 
-<!-- HEADER -->
+
 <header class="header">
     <a href="index.html" class="logo"><img src="img/logo.png" alt="BTS Logo"></a>
     <button id="menuBtn" class="menu-btn">☰</button>
 </header>
 
-<!-- MENU OVERLAY -->
 <div class="menu-overlay" id="menu">
     <div class="menu-header">
         <a href="index.html" class="menu-logo"><img src="img/logo.png" alt="BTS Logo"></a>
@@ -44,11 +43,11 @@
  <div class="page-label">
   <span class="num">03</span>
   <div class="line"></div>
-  <span class="text">PROFILE</span>
+  <span class="text">DISCOGRAPHY</span>
 </div>
 
 
-<!-- SIDEBAR SOCIALS -->
+
 <div class="socials-main">
     <a href="#"><i class="fa-brands fa-instagram"></i></a>
     <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -58,12 +57,13 @@
 
 <section class="discography-section">
   <h1 class="section-title">DISCOGRAPHY</h1>
-<!-- DISCOGRAPHY SLIDER -->
+
+
 <section class="discography-slider">
     <div class="slider-wrapper">
         <div class="slider-window">
             <div class="slider-track" id="sliderTrack">
-                <!-- SLIDE 1 -->
+              
                 <div class="slide">
                     <a class="album-card" href="https://open.spotify.com/album/1nScVw87kRJiT2bg2Kswhp"><img src="album/Map of the soul.jpg"><div class="info"><h4>MAP OF THE SOUL : 7</h4><span>2020</span></div></a>
                     <a class="album-card" href="https://open.spotify.com/album/7cvsViO3Tg4w5ixs5Aq7mS?si=IK0O_WobRESbjW3i3pbvAQ"><img src="album/Dynamite.jpg"><div class="info"><h4>MAP OF THE SOUL : PERSONA</h4><span>2019</span></div></a>
@@ -73,7 +73,7 @@
                     <a class="album-card" href="https://open.spotify.com/album/6al2VdKbb6FIz9d7lU7WRB?si=DpmTRcgXSVG0Onu8hv1fiw"><img src="album/Proof.jpg"><div class="info"><h4>WINGS</h4><span>2016</span></div></a>
                 
                 </div>
-                <!-- SLIDE 2 -->
+             
                 <div class="slide">
                     <a class="album-card" href="https://open.spotify.com/track/1hciAV5LrrTkRV0g0StZ6h?si=abc6bd9cb401495c"><img src="album/ButterandPermission.png"><div class="info"><h4>YOU NEVER WALK ALONE</h4><span>2017</span></div></a>
                     <a class="album-card" href="https://open.spotify.com/album/6bN241dPMC54Ac6zV1B8hl?si=GL_WgzWXSfqwCu0zEtbl8Q"><img src="album/Bts,The Best.png"><div class="info"><h4>LOVE YOURSELF 轉 ‘Tear’</h4><span>2018</span></div></a>
@@ -83,7 +83,7 @@
                     <a class="album-card" href="https://open.spotify.com/album/6nYfHQnvkvOTNHnOhDT3sr?si=7gxZo9TwRyOd_8WurS-9tQ"><img src="album/BE.png"><div class="info"><h4>LOVE YOURSELF 轉 ‘Tear’</h4><span>2018</span></div></a>
                     <a class="album-card" href="https://open.spotify.com/track/5IAESfJjmOYu7cHyX557kz?si=90429da4d7804d88"><img src="album/take two.jpg"><div class="info"><h4>WINGS</h4><span>2016</span></div></a>
                 </div>
-                 <!-- SLIDE 3 -->
+              
                 <div class="slide">
                     <a class="album-card" href="https://open.spotify.com/album/5W1XY5ucNATjTULERvXx9j?si=-KNmni7OQT63OuNB7XkkRQ"><img src="album/7.jpg"><div class="info"><h4>DARK & WILD</h4><span>2014</span></div></a>
                     <a class="album-card" href="https://open.spotify.com/album/43wFM1HquliY3iwKWzPN4y?si=r_6jHGlJT56euMVOAE7JEQ"><img src="album/lY.webp"><div class="info"><h4>SKOOL LUV AFFAIR</h4><span>2014</span></div></a>
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <!-- NAV BUTTONS -->
+        
         <div class="slider-nav-bottom">
             <button onclick="prevSlide()">‹</button>
             <span id="current">1</span> / <span id="total">2</span>
@@ -108,9 +108,9 @@
     © HYBE Co., Ltd. ALL RIGHTS RESERVED.
 </div>
 
-<!-- SCRIPT -->
-<script>
 
+<script>
+    
     const menu = document.getElementById("menu");
     const menuBtn = document.getElementById("menuBtn");
     const closeBtn = document.getElementById("closeBtn");
@@ -125,7 +125,7 @@
         document.body.classList.remove("menu-open");
     });
 
-    // SLIDER
+ 
     let currentSlide = 0;
     const slides = document.querySelectorAll(".slide");
     const track = document.getElementById("sliderTrack");
@@ -137,6 +137,7 @@
         track.style.transform = `translateX(-${currentSlide * 100}%)`;
         current.textContent = currentSlide + 1;
 
+       
         const albums = slides[currentSlide].querySelectorAll(".album-card");
         albums.forEach((album, i) => {
             setTimeout(() => album.classList.add("animate"), i * 150);
@@ -157,7 +158,7 @@
         }
     }
 
-    
+  
     const allAlbums = document.querySelectorAll(".album-card");
     allAlbums.forEach((album, i) => {
         setTimeout(() => album.classList.add("animate"), i * 150);
@@ -166,4 +167,3 @@
 
 </body>
 </html>
-
