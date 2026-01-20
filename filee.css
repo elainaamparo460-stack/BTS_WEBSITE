@@ -16,6 +16,7 @@ body.menu-open {
   overflow: hidden;
 }
 
+
 .header {
   position: fixed;
   top: 0;
@@ -87,7 +88,7 @@ body.menu-open {
 }
 
 .menu-links a:hover {
-  color: #edfe80;
+  color:  #6d21d2;
   transform: translateX(10px);
 }
 
@@ -104,7 +105,7 @@ body.menu-open {
 
 .menu-socials a { color: #111; text-decoration: none; }
 .menu-socials i { font-size: 22px; transition: 0.3s; }
-.menu-socials a:hover i { transform: translateX(6px); color: #edfe80; }
+.menu-socials a:hover i { transform: translateX(6px); color:  #6d21d2; }
 
 .menu-overlay .copyright {
   position: absolute;
@@ -150,7 +151,8 @@ body.menu-open {
 }
 
 .socials-main a { color: #111; font-size: 22px; transition: 0.3s; text-decoration: none; }
-.socials-main a:hover { transform: translateX(6px); color: #edfe80; }
+.socials-main a:hover { transform: translateX(6px); color: #6d21d2; }
+
 
 .profile-section {
   min-height: 100vh;
@@ -170,10 +172,11 @@ body.menu-open {
   font-size: 13px; 
   letter-spacing: 2px; 
   cursor: pointer; 
-  font-weight: 700; /* Balik sa dating kapal */
+  font-weight: 700; 
   transition: 0.25s ease;
 }
-.member-list li.active, .member-list li:hover { color: #edfe80; transform: scale(1.1); }
+.member-list li.active, .member-list li:hover { color:  #6d21d2; transform: scale(1.1); }
+
 
 .profile-image-box {
   position: relative;
@@ -221,5 +224,4 @@ body.menu-open {
   .profile-wrapper { flex-direction: column; align-items: center; text-align: center; }
   .profile-info { margin-top: 40px; }
   .profile-image-box { width: 90%; }
-
 }
