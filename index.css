@@ -12,6 +12,8 @@ body {
   color: #fff;
 }
 
+
+.header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -23,10 +25,12 @@ body {
 }
 
 .header .logo img {
-  height: 100px;   /* mas malaki */
+  height: 100px;  
   width: auto;
   display: block;
 }
+
+
 
 .menu-btn {
   font-size: 32px;
@@ -38,8 +42,9 @@ body {
 }
 
 .menu-btn:hover {
-  color: #edfe80;
+  color:  #6d21d2;
 }
+
 
 .socials-main {
   position: fixed;
@@ -58,7 +63,7 @@ body {
 }
 
 .socials-main a:hover {
-  color: #edfe80;
+  color:  #6d21d2;
   transform: translateX(-6px);
 }
 
@@ -67,6 +72,7 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+
 
 .hero {
   height: 100vh;
@@ -130,9 +136,10 @@ body {
 }
 
 .close-btn:hover {
-  color: #edfe80;
+  color:  #6d21d2;
   transform: rotate(90deg);
 }
+
 
 .menu-links {
   position: absolute;
@@ -156,7 +163,7 @@ body {
 }
 
 .menu-links a:hover {
-  color: #edfe80;
+  color:  #6d21d2;
   transform: translateY(-6px);
 }
 
@@ -177,7 +184,7 @@ body {
 }
 
 .menu-socials a:hover {
-  color: #edfe80;
+  color:  #6d21d2;
   transform: translateX(-6px);
 }
 
@@ -191,6 +198,7 @@ body {
   letter-spacing: 1px;
   color: #111;
 }
+
 
 @media (max-width: 768px) {
   .header {
@@ -221,4 +229,3 @@ body {
     font-size: 10px;
   }
 }
-
