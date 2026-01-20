@@ -29,7 +29,6 @@
         <a href="discography.html">DISCOGRAPHY</a>
         <a href="video.html">VIDEO</a>
         <a href="tinytan.html">TINYTAN</a>
-        <a href="gallery.html">GALLERY</a>
     </nav>
     <div class="menu-socials">
         <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -43,9 +42,9 @@
 </div>
 
  <div class="page-label">
-  <span class="num">03</span>
+  <span class="num">04</span>
   <div class="line"></div>
-  <span class="text">PROFILE</span>
+  <span class="text">VIDEO</span>
 </div>
 
 <main class="video-section">
@@ -170,6 +169,8 @@
 
     menuBtn.onclick = () => menu.classList.add("open");
     closeBtn.onclick = () => menu.classList.remove("open");
+
+  
     function changeVideo(videoId) {
         const mainVideo = document.getElementById('mainVideo');
         mainVideo.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
@@ -177,13 +178,12 @@
         const items = document.querySelectorAll('.video-item');
         items.forEach(item => item.classList.remove('active'));
         
-        // Gamit ang event target para malaman kung alin ang pinindot
+      
         event.currentTarget.classList.add('active');
     }
 
-
     const track = document.getElementById("videoTrack");
-    const items = document.querySelectorAll(".video-item"); // DINEFINE ITO PARA GUMANA ANG LENGTH
+    const items = document.querySelectorAll(".video-item"); 
     const slideCurrent = document.getElementById("slideCurrent");
     const slideTotal = document.getElementById("slideTotal");
 
@@ -195,7 +195,7 @@
 
     function updateSlide(){
         if(items.length > 0) {
-            const itemWidth = items[0].offsetWidth + 32; // 32px gap sa CSS mo
+            const itemWidth = items[0].offsetWidth + 32; 
             track.style.transform = `translateX(-${slideIndex * itemWidth}px)`;
             slideCurrent.textContent = slideIndex + 1;
         }
@@ -215,10 +215,9 @@
         }
     }
 
-
+    
     window.addEventListener('resize', updateSlide);
 </script>
 
 </body>
-
 </html>
